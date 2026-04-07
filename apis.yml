@@ -7,10 +7,10 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Vehicle Tracking
   - Fleet Management
   - GPS
   - Telematics
+  - Vehicle Tracking
 url: >-
   https://raw.githubusercontent.com/api-evangelist/autotrac/refs/heads/main/apis.yml
 created: '2024-01-01'
@@ -22,10 +22,10 @@ apis:
     description: Real-time vehicle location tracking and fleet monitoring.
     humanURL: https://www.autotrac.com.br/
     tags:
-      - Vehicle Tracking
       - Fleet Management
       - GPS
       - Telematics
+      - Vehicle Tracking
     properties:
       - type: Documentation
         url: https://www.autotrac.com.br/
