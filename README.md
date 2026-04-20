@@ -1,75 +1,99 @@
-# AutoTrac APIs (autotrac)
-APIs for the AutoTrac vehicle tracking and fleet management platform
+# AutoTrac (autotrac)
 
-**URL:** [Visit APIs.json URL](https://www.autotrac.com)
+AutoTrac is a Brazilian fleet management and vehicle tracking technology company with over 30 years of experience. As the national market leader, AutoTrac provides satellite and cellular fleet tracking solutions, real-time telemetry, driver journey management, and management intelligence platforms for logistics, agriculture, maritime, and insurance sectors.
+
+**URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
+
+**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+
+## Tags
+
+ - Fleet Management, GPS Tracking, Telematics, Vehicle Tracking, Logistics, Brazil, Satellite Communication
 
 ## Timestamps
 
-- **Created:** 2024 
-- **Modified:** 2024 
+- **Created:** 2024-01-01
+- **Modified:** 2026-04-19
 
 ## APIs
 
-### AutoTrac Vehicle Tracking API
-Real-time vehicle location tracking and fleet monitoring
+### AutoTrac Supervisor Web API
 
-**Human URL:** [https://www.autotrac.com/vehicle-tracking](https://www.autotrac.com/vehicle-tracking)
+The AutoTrac Supervisor Web platform provides fleet management capabilities for monitoring vehicle locations, managing fleet operations, generating reports, and coordinating driver assignments across Brazil.
 
+**Human URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
 
-#### Tags:
+#### Tags
 
- - Vehicle Tracking, Fleet Management, GPS, Telematics
-
-#### Properties
-
-- [Documentation](https://docs.autotrac.com/vehicle-tracking)
-- [OpenAPI](https://api.autotrac.com/v1/openapi.json)
-- [Authentication](https://docs.autotrac.com/authentication)
-
-### AutoTrac Fleet Management API
-Manage fleet operations, driver assignments, and vehicle maintenance
-
-**Human URL:** [https://www.autotrac.com/fleet-management](https://www.autotrac.com/fleet-management)
-
-
-#### Tags:
-
- - Fleet Management, Driver Management, Maintenance, Asset Management
+ - Fleet Management, GPS Tracking, Vehicle Monitoring, Fleet Operations
 
 #### Properties
 
-- [Documentation](https://docs.autotrac.com/fleet-management)
-- [OpenAPI](https://api.autotrac.com/v1/openapi.json)
+- [Website](https://www.autotrac.com.br)
+- [Documentation](https://www.autotrac.com.br)
 
-### AutoTrac Reporting API
-Generate reports on vehicle usage, driver behavior, and fleet analytics
+### AutoTrac Telemetria API
 
-**Human URL:** [https://www.autotrac.com/reporting](https://www.autotrac.com/reporting)
+The AutoTrac Telemetria platform provides real-time vehicle telemetry data including speed, fuel consumption, engine diagnostics, and driver behavior metrics for preventive maintenance and operational efficiency.
 
+**Human URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
 
-#### Tags:
+#### Tags
 
- - Reporting, Analytics, Business Intelligence, Data Export
+ - Telemetry, Vehicle Diagnostics, Fuel Management, Driver Behavior
 
 #### Properties
 
-- [Documentation](https://docs.autotrac.com/reporting)
-- [OpenAPI](https://api.autotrac.com/v1/openapi.json)
+- [Website](https://www.autotrac.com.br)
+
+### AutoTrac Jornada Driver Journey API
+
+The AutoTrac Jornada platform manages driver journey logs and compliance with Brazilian driving hour regulations, tracking driving time and rest periods for long-distance transport compliance.
+
+**Human URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
+
+#### Tags
+
+ - Driver Management, Journey Logs, Compliance, Transportation Regulations
+
+#### Properties
+
+- [Website](https://www.autotrac.com.br)
 
 ## Common Properties
 
-- [Portal](https://developer.autotrac.com)
-- [SignUp](https://www.autotrac.com/signup)
-- [Login](https://app.autotrac.com/login)
-- [Terms of Service](https://www.autotrac.com/terms)
-- [Privacy Policy](https://www.autotrac.com/privacy)
-- [Support](https://support.autotrac.com)
-- [Status](https://status.autotrac.com)
-- [Pricing](https://www.autotrac.com/pricing)
-- [Blog](https://www.autotrac.com/blog)
+- [Website](https://www.autotrac.com.br)
+
+## Features
+
+| Name | Description |
+|------|-------------|
+| Proprietary Satellite Communication | AutoTrac operates its own terrestrial satellite communication station and integrated data center, providing coverage in areas with limited cellular connectivity across Brazil. |
+| Real-Time Vehicle Telemetry | Real-time monitoring of vehicle parameters including location, speed, fuel consumption, engine diagnostics, and cargo temperature for refrigerated transport. |
+| Driver Journey Management | Jornada platform for tracking driver hours, rest periods, and journey compliance with Brazilian transportation regulations. |
+| Fleet Intelligence Reporting | Informacoes Gerenciais business intelligence dashboards for fleet performance analytics, cost analysis, and operational reporting. |
+| Agricultural Equipment Tracking | Specialized tracking solutions for agricultural machinery including harvesters, tractors, and implements with field operation monitoring. |
+
+## Use Cases
+
+| Name | Description |
+|------|-------------|
+| Long-Distance Logistics Tracking | Track trucks and cargo across Brazil using satellite and cellular communication for nationwide visibility of logistics operations. |
+| Refrigerated Cargo Monitoring | Monitor temperature-controlled cargo transport with real-time telemetry alerts for temperature deviations in refrigerated vehicles. |
+| Driver Compliance Management | Ensure compliance with Brazilian driver hour regulations by tracking journey logs and rest periods automatically via Jornada. |
+| Agricultural Fleet Management | Track agricultural equipment, monitor field operations, and manage harvest logistics for agribusiness operations. |
+| Insurance Telematics | Provide vehicle behavior and location data to insurance companies for usage-based insurance and stolen vehicle recovery programs. |
+
+## Integrations
+
+| Name | Description |
+|------|-------------|
+| TMS Systems | Integration with transportation management systems for freight dispatch, route optimization, and delivery confirmation workflows. |
+| ERP Systems | Connect AutoTrac fleet data with ERP systems (SAP, TOTVS) for fleet cost accounting, maintenance scheduling, and asset management. |
+| Insurance Platforms | API integration with insurance carriers for vehicle recovery, claims verification, and telematics-based premium calculation. |
 
 ## Maintainers
 
-**FN:** AutoTrac API Team
+**FN:** Kin Lane
 
-**Email:** api@autotrac.com
+**Email:** kin@apievangelist.com
