@@ -76,6 +76,8 @@ apis:
         url: https://www.autotrac.com.br
 
 common:
+  - type: DomainSecurity
+    url: security/autotrac-domain-security.yml
   - type: Website
     url: https://www.autotrac.com.br
   - type: Features
