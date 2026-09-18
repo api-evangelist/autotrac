@@ -1,0 +1,284 @@
+generated: '2026-09-18'
+method: probed
+source: live GET of every path listed below on the registrable domain, www, and the Supervisor application host
+  www.autotrac-online.com.br (the only non-marketing host AutoTrac links to); the record carries no API baseURL
+  or servers[] host to probe
+provider: AutoTrac
+providerId: autotrac
+summary: No /.well-known/ document, apis.json, agent card, llms.txt or OpenAPI is served on any AutoTrac host. www.autotrac.com.br
+  answers a real 404 for all of them; autotrac.com.br and www.autotrac-online.com.br are catch-alls that redirect
+  every path (negative control included) to an HTML page. hit_count is 0 on all three hosts, so NO WellKnown/SecurityTxt/AgentCard
+  pointer is emitted — this file records an absence.
+hosts:
+- host: https://www.autotrac.com.br
+  hit_count: 0
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/autotrac-negative-control-<random>.json
+    status: 404
+    final_url: https://www.autotrac.com.br/.well-known/autotrac-negative-control-0bd891c1.json
+    result: passed
+  note: Real 404 on every path (WordPress 404 template, 300+ bytes of HTML). Negative control also 404, so misses
+    here are genuine misses.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+- host: https://autotrac.com.br
+  hit_count: 0
+  path_echo_control: failed
+  negative_control:
+    path: /.well-known/autotrac-negative-control-<random>.json
+    status: 200
+    final_url: https://www.autotrac.com.br/
+    result: failed
+  note: 'Catch-all: every path, including the negative control, 302s to https://www.autotrac.com.br/ and lands on
+    the marketing homepage with a 200. Nothing here is a document; every row is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /apis.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /apis.yml
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac.com.br/
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+- host: https://www.autotrac-online.com.br
+  hit_count: 0
+  path_echo_control: failed
+  negative_control:
+    path: /.well-known/autotrac-negative-control-<random>.json
+    status: 200
+    final_url: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    result: failed
+  note: 'Catch-all: every path, including the negative control, 302s to /supervisor/pages/login.aspx (the Supervisor
+    customer login) and returns 200 HTML. Nothing here is a document; every row is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /apis.json
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+  - path: /apis.yml
+    status: 200
+    file: null
+    redirected_to: https://www.autotrac-online.com.br/supervisor/pages/login.aspx
+    note: HTML page after redirect, not a document — treated as a miss
+    real_document: false
+    result: html-catchall
+    content_type: text/html
+also_probed:
+- path: /openapi.json
+  note: 'all hosts: 404 on www, redirect-to-HTML on the two catch-all hosts; no OpenAPI, llms.txt or A2A card'
+- path: /swagger.json
+  note: 'all hosts: 404 on www, redirect-to-HTML on the two catch-all hosts; no OpenAPI, llms.txt or A2A card'
+- path: /llms.txt
+  note: 'all hosts: 404 on www, redirect-to-HTML on the two catch-all hosts; no OpenAPI, llms.txt or A2A card'
+- path: /.well-known/agent-card.json
+  note: 'all hosts: 404 on www, redirect-to-HTML on the two catch-all hosts; no OpenAPI, llms.txt or A2A card'
+- path: /.well-known/agent.json
+  note: 'all hosts: 404 on www, redirect-to-HTML on the two catch-all hosts; no OpenAPI, llms.txt or A2A card'
