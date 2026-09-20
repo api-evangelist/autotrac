@@ -1,0 +1,14 @@
+{
+  "repo": "autotrac",
+  "feeds": [
+    {
+      "source": "https://www.autotrac.com.br/fale-com-a-gente/perguntas-frequentes/",
+      "feed_url": "https://www.autotrac.com.br/fale-com-a-gente/perguntas-frequentes/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-19T20:17:39Z"
+}
