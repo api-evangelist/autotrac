@@ -128,6 +128,8 @@ apis:
       AutoTrac per customer, as described by third-party integrators Senior Logística (documentacao.senior.com.br)
       and Atua (wiki.atua.com.br); nothing is self-serve.
 common:
+  - type: FinOps
+    url: finops/autotrac-finops.yml
   - type: DomainSecurity
     url: security/autotrac-domain-security.yml
   - type: Website
