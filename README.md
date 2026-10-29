@@ -1,4 +1,4 @@
-# AutoTrac (autotrac)
+# AutoTrac
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,100 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AutoTrac is a Brazilian fleet management and vehicle tracking technology company with over 30 years of experience. As the national market leader, AutoTrac provides satellite and cellular fleet tracking solutions, real-time telemetry, driver journey management, and management intelligence platforms for logistics, agriculture, maritime, and insurance sectors.
+AutoTrac is a Brazilian fleet management and vehicle tracking technology company with over 30 years of experience. As the national market leader, AutoTrac provides satellite and cellular fleet tracking solutions, real-time telemetry, driver journey management, and management intelligence platforms for logistics, agriculture, maritime, and insurance sectors. The company operates its own terrestrial satellite communication station and data center for nationwide coverage.
 
-**URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
+**Areas:** Fleet Management · GPS Tracking · Telematics · Vehicle Tracking · Logistics · Brazil · Satellite Communication · Insurance Telematics · Supply Chain Visibility
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## AutoTrac on APIs.io
 
-## Tags
+Everything profiled for AutoTrac is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/autotrac/](https://apis.io/providers/autotrac/)** — or go straight to one of the APIs or properties below.
 
- - Fleet Management, GPS Tracking, Telematics, Vehicle Tracking, Logistics, Brazil, Satellite Communication
+### APIs (4)
 
-## Timestamps
+- [AutoTrac Supervisor Web API](https://apis.io/apis/autotrac/supervisor-web-api/) — The AutoTrac Supervisor Web platform provides fleet management capabilities for monitoring vehicle locations, managing fleet operations, generating reports,…
+- [AutoTrac Telemetria API](https://apis.io/apis/autotrac/telemetria-api/) — The AutoTrac Telemetria platform provides real-time vehicle telemetry data including speed, fuel consumption, engine diagnostics, tire pressure, temperature…
+- [AutoTrac Jornada Driver Journey API](https://apis.io/apis/autotrac/jornada-api/) — The AutoTrac Jornada platform manages driver journey logs and compliance with Brazilian driving hour regulations, tracking driving time, rest periods, and…
+- [AutoTrac Serviço API de Integração](https://apis.io/apis/autotrac/integration-api/) — The "Serviço API de integração" is the one product AutoTrac markets as an API. For shippers (embarcadores) it feeds a control tower with real-time…
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### AutoTrac Supervisor Web API
+#### Security (1)
 
-The AutoTrac Supervisor Web platform provides fleet management capabilities for monitoring vehicle locations, managing fleet operations, generating reports, and coordinating driver assignments across Brazil.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
+- [Autotrac Domain Security](https://apis.io/security/autotrac/autotrac-domain-security/)
 
-#### Tags
+#### Plans and pricing (1)
 
- - Fleet Management, GPS Tracking, Vehicle Monitoring, Fleet Operations
+Published plans, tiers and prices.
 
-#### Properties
+- [Autotrac Plans Pricing](https://apis.io/plans/autotrac/autotrac-plans-pricing/)
 
-- [Website](https://www.autotrac.com.br)
-- [Documentation](https://www.autotrac.com.br)
+#### Rate limits (1)
 
-### AutoTrac Telemetria API
+Published request limits.
 
-The AutoTrac Telemetria platform provides real-time vehicle telemetry data including speed, fuel consumption, engine diagnostics, and driver behavior metrics for preventive maintenance and operational efficiency.
+- [Autotrac Rate Limits](https://apis.io/rate-limits/autotrac/autotrac-rate-limits/)
 
-**Human URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
- - Telemetry, Vehicle Diagnostics, Fuel Management, Driver Behavior
+- [Autotrac Finops](https://apis.io/finops/autotrac/autotrac-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Website](https://www.autotrac.com.br)
-
-### AutoTrac Jornada Driver Journey API
-
-The AutoTrac Jornada platform manages driver journey logs and compliance with Brazilian driving hour regulations, tracking driving time and rest periods for long-distance transport compliance.
-
-**Human URL:** [https://www.autotrac.com.br](https://www.autotrac.com.br)
-
-#### Tags
-
- - Driver Management, Journey Logs, Compliance, Transportation Regulations
-
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.autotrac.com.br)
+- [Support](https://www.autotrac.com.br/fale-com-a-gente/)
+- [Blog](https://www.autotrac.com.br/noticias/)
+- [Privacy policy](https://www.autotrac.com.br/politica-de-privacidade/)
 
-## Common Properties
+## API Evangelist rating
 
-- [Website](https://www.autotrac.com.br)
+**Kin Score 9.9** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Features
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 17.1 |
 
-| Name | Description |
-|------|-------------|
-| Proprietary Satellite Communication | AutoTrac operates its own terrestrial satellite communication station and integrated data center, providing coverage in areas with limited cellular connectivity across Brazil. |
-| Real-Time Vehicle Telemetry | Real-time monitoring of vehicle parameters including location, speed, fuel consumption, engine diagnostics, and cargo temperature for refrigerated transport. |
-| Driver Journey Management | Jornada platform for tracking driver hours, rest periods, and journey compliance with Brazilian transportation regulations. |
-| Fleet Intelligence Reporting | Informacoes Gerenciais business intelligence dashboards for fleet performance analytics, cost analysis, and operational reporting. |
-| Agricultural Equipment Tracking | Specialized tracking solutions for agricultural machinery including harvesters, tractors, and implements with field operation monitoring. |
+**Agent readiness 2.5** — human-only
 
-## Use Cases
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Long-Distance Logistics Tracking | Track trucks and cargo across Brazil using satellite and cellular communication for nationwide visibility of logistics operations. |
-| Refrigerated Cargo Monitoring | Monitor temperature-controlled cargo transport with real-time telemetry alerts for temperature deviations in refrigerated vehicles. |
-| Driver Compliance Management | Ensure compliance with Brazilian driver hour regulations by tracking journey logs and rest periods automatically via Jornada. |
-| Agricultural Fleet Management | Track agricultural equipment, monitor field operations, and manage harvest logistics for agribusiness operations. |
-| Insurance Telematics | Provide vehicle behavior and location data to insurance companies for usage-based insurance and stolen vehicle recovery programs. |
+**Regulatory alignment 8.8** — Insurance
 
-## Integrations
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/autotrac/](https://apis.io/providers/autotrac/).
 
-| Name | Description |
-|------|-------------|
-| TMS Systems | Integration with transportation management systems for freight dispatch, route optimization, and delivery confirmation workflows. |
-| ERP Systems | Connect AutoTrac fleet data with ERP systems (SAP, TOTVS) for fleet cost accounting, maintenance scheduling, and asset management. |
-| Insurance Platforms | API integration with insurance carriers for vehicle recovery, claims verification, and telematics-based premium calculation. |
+## How this profile is made
 
-## Maintainers
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-**FN:** Kin Lane
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AutoTrac: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**Email:** kin@apievangelist.com
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/autotrac/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
